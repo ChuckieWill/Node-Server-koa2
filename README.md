@@ -4,7 +4,7 @@
 
 > 关于本模板框架各模块详细讲解，可查看[本人博客-koa学习笔记](https://chuckiewill.github.io/2020/03/02/node/koa/koa/)
 
-###  1.1 项目亮点
+###  1.1 项目核心内容
 
 * 基于第三方库`Lin-validator`可自定义封装参数校验器-validator.js
 * 基于第三方库`Sequelize`，可更方便的实现对数据库的操作，并封装了连接MySQL数据库-db.js
@@ -213,7 +213,7 @@ module.exports = router
 
 * Lin-Validator的使用可查看
   * [LinValidator官方使用教程](https://doc.cms.talelin.com/server/koa/validator.html)
-  * [个人博客本项目详解-校验器)](https://chuckiewill.github.io/2020/03/02/node/koa/koa/)
+  * [个人博客本项目详解-校验器](https://chuckiewill.github.io/2020/03/02/node/koa/koa/)
 
 * 编码位置：`app/validators/validator.js`
 
@@ -375,3 +375,4 @@ const token = generateToken(user.id, Auth.USER)
    * `scope> LoginAuth.CAN_ADMIN`时，管理员及以上权限可访问该接口
    * `scope> LoginAuth.CAN_SUPER_ADMIN`时，超级管理员及以上权限可访问该接口
    * 依次类推自定义的情况
+
